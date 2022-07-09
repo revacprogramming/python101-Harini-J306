@@ -1,8 +1,8 @@
 # Tuples
 
-name = \
-input("Enter file:")
-if len(name) < 1 : name = "mbox-short.txt"
+name = input("Enter file:")
+if len(name) < 1:
+    name = "mbox-short.txt"
 handle = open(name)
 d=dict()
 for line in handle:
@@ -20,4 +20,4 @@ for value,count in d.items():
 
 lst.sort()
 for value,count in lst:
-    print value,count
+    print (value,count)
